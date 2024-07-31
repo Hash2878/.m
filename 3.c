@@ -51,13 +51,13 @@ void drawhouse() {
     glVertex2f(house[0][3], house[1][3]);
     glVertex2f(house[0][4], house[1][4]);
     glEnd();
-    
     glBegin(GL_LINE_LOOP);
-    glVertex2f(result[0][1],result[1][1]);
-    glVertex2f(result[0][3],result[1][3]);
-    glVertex2f(result[0][2],result[1][2]);
-
+    glVertex2f(house[0][1], house[1][1]);
+    glVertex2f(house[0][3], house[1][3]);
+    glVertex2f(house[0][2], house[1][2]);
+//    glVertex2f(house[0][8], house[1][8]);
     glEnd();
+ 
     
     glBegin(GL_LINE_LOOP);
     glVertex2f(house[0][5], house[1][5]);
@@ -86,13 +86,13 @@ void drawRotatehouse() {
     glVertex2f(result[0][7], result[1][7]);
     glVertex2f(result[0][8], result[1][8]);
     glEnd();
-    
-    glBegin(GL_LINE_LOOP);
-    glVertex2f(house[0][1], house[1][1]);
-    glVertex2f(house[0][3], house[1][3]);
-    glVertex2f(house[0][2], house[1][2]);
-//    glVertex2f(house[0][8], house[1][8]);
+       glBegin(GL_LINE_LOOP);
+    glVertex2f(result[0][1],result[1][1]);
+    glVertex2f(result[0][3],result[1][3]);
+    glVertex2f(result[0][2],result[1][2]);
+
     glEnd();
+    
     
 }
 
